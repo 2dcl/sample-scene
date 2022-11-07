@@ -1,28 +1,24 @@
-
-
 {
-  "name": "empty_parcel",
-  "parcels": [],
+  "name": "Sample Scene",
+  "parcels": [ "0,1" ],
   "entities": [
     {
       "name": "background",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "background.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": -2,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "Center"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/background.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": -2,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "Center"
         },
-        {
-          "Transform": {
-            "location": [ 0.0, 0.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
+        { 
+          "type": "Transform",
+          "location": [ 0.0, 0.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         }
       ]
     },
@@ -30,27 +26,24 @@
       "name": "Tree_1",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Arbol 1.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Arbol 1.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ 88.0, 105.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ 88.0, 105.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 15.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 15 ]
         }
       ]
     },
@@ -58,27 +51,24 @@
       "name": "Tree_2",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Arbol 1.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": true,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Arbol 1.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": true,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ -19.0, -113.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ -19.0, -113.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 15.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 15 ]
         }
       ]
     },
@@ -86,27 +76,24 @@
       "name": "Tree_3",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Arbol 2.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Arbol 2.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ -12.0, -23.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ -12.0, -23.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 15.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 15 ]
         }
       ]
     },
@@ -114,27 +101,24 @@
       "name": "Tree_4",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Arbol 2.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": true,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Arbol 2.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": true,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ 73.0, 3.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ 73.0, 3.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 15.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 15 ]
         }
       ]
     },
@@ -142,21 +126,19 @@
       "name": "Bush_1",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Arbusto 1.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": -1,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Arbusto 1.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": -1,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
         },
-        {
-          "Transform": {
-            "location": [ -77.0, 51.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
+        { 
+          "type": "Transform",
+          "location": [ -77.0, 51.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         }
       ]
     },
@@ -164,21 +146,19 @@
       "name": "Bush_2",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Arbusto 2.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": -1,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Arbusto 2.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": -1,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
         },
-        {
-          "Transform": {
-            "location": [ -18.0, 102.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
+        { 
+          "type": "Transform",
+          "location": [ -18.0, 102.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         }
       ]
     },
@@ -186,21 +166,19 @@
       "name": "Bush_3",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Arbusto 3.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": -1,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Arbusto 3.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": -1,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
         },
-        {
-          "Transform": {
-            "location": [ 7.0, -13.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
+        { 
+          "type": "Transform",
+          "location": [ 7.0, -13.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         }
       ]
     },
@@ -208,27 +186,24 @@
       "name": "Rock_1",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Roca 1.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Roca 1.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ -133.0, -156.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ -133.0, -156.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 40.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 40 ]
         }
       ]
     },
@@ -236,27 +211,24 @@
       "name": "Rock_2",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Roca 2.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Roca 2.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ -131.0, 53.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ -131.0, 53.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 40.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 40 ]
         }
       ]
     },
@@ -264,27 +236,24 @@
       "name": "Rock_3",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Roca 3.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Roca 3.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ -133.0, -156.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ -133.0, -156.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 40.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 40 ]
         }
       ]
     },
@@ -292,27 +261,24 @@
       "name": "Rock_4",
       "components": [
         {
-          "SpriteRenderer": {
-            "sprite": "Roca 4.png",
-            "color": [ 1.0, 1.0, 1.0, 1.0 ],
-            "layer": 0,
-            "flip_x": false,
-            "flip_y": false,
-            "anchor": "BottomCenter"
-          }
+          "type": "SpriteRenderer",
+          "sprite": "assets/Roca 4.png",
+          "color": [ 1.0, 1.0, 1.0, 1.0 ],
+          "layer": 0,
+          "flip_x": false,
+          "flip_y": false,
+          "anchor": "BottomCenter"
+        },
+        { 
+          "type": "Transform",
+          "location": [ -12.0, -66.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0 ]
         },
         {
-          "Transform": {
-            "location": [ -12.0, -66.0 ],
-            "rotation": [ 0.0, 0.0, 0.0 ],
-            "scale": [ 1.0, 1.0 ]
-          }
-        },
-        {
-          "BoxCollider": {
-            "center": [ 0.0, 0.0 ],
-            "size": [ 15.0, 40.0 ]
-          }
+          "type": "BoxCollider",
+          "center": [ 0, 0 ],
+          "size": [ 15, 40 ]
         }
       ]
     }
