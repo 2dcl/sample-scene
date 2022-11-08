@@ -1,13 +1,13 @@
 {
   "name": "Sample Scene",
-  "parcels": [ "0,1" ],
+  "parcels": [ "0,0" ],
   "entities": [
     {
       "name": "background",
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/background.png",
+          "sprite": "background.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": -2,
           "flip_x": false,
@@ -27,7 +27,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Arbol 1.png",
+          "sprite": "Arbol 1.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": false,
@@ -52,7 +52,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Arbol 1.png",
+          "sprite": "Arbol 1.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": true,
@@ -77,7 +77,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Arbol 2.png",
+          "sprite": "Arbol 2.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": false,
@@ -102,7 +102,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Arbol 2.png",
+          "sprite": "Arbol 2.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": true,
@@ -127,7 +127,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Arbusto 1.png",
+          "sprite": "Arbusto 1.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": -1,
           "flip_x": false,
@@ -147,7 +147,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Arbusto 2.png",
+          "sprite": "Arbusto 2.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": -1,
           "flip_x": false,
@@ -167,7 +167,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Arbusto 3.png",
+          "sprite": "Arbusto 3.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": -1,
           "flip_x": false,
@@ -187,7 +187,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Roca 1.png",
+          "sprite": "Roca 1.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": false,
@@ -212,7 +212,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Roca 2.png",
+          "sprite": "Roca 2.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": false,
@@ -237,7 +237,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Roca 3.png",
+          "sprite": "Roca 3.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": false,
@@ -262,7 +262,7 @@
       "components": [
         {
           "type": "SpriteRenderer",
-          "sprite": "assets/Roca 4.png",
+          "sprite": "Roca 4.png",
           "color": [ 1.0, 1.0, 1.0, 1.0 ],
           "layer": 0,
           "flip_x": false,
