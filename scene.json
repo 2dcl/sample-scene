@@ -1,4 +1,3 @@
-
 {
   "name": "Sample Scene",
   "parcels": [ "0,0" ],
@@ -240,6 +239,31 @@
           ]
         },
         {
+          "name": "level_change",
+          "components": [
+            {
+              "type": "Transform",
+              "location": [ 225, -320 ],
+              "rotation": [ 0.0, 0.0, 0.0 ],
+              "scale": [ 1.0, 1.0 ]
+            },
+            {
+              "type": "BoxCollider",
+              "center": [ 0, 0 ],
+              "size": [ 100, 100 ],
+              "collision_type": "Trigger"
+            },
+            {
+              "type": "LevelChange",
+              "level": "interior",
+              "spawn_point": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ]
+        },
+        {
           "name": "house_main",
           "components": [
             {
@@ -281,7 +305,8 @@
             {
               "type": "BoxCollider",
               "center": [ -120, 125 ],
-              "size": [ 50, 250 ]
+              "size": [ 50, 250 ],
+              "collision_type": "Trigger"
             }
           ]
         },
@@ -953,6 +978,29 @@
             {
               "type": "Transform",
               "location": [ 370, -425 ],
+              "rotation": [ 0.0, 0.0, 0.0 ],
+              "scale": [ 1.0, 1.0 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "interior",
+      "entities": [
+        {
+          "name": "background",
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "Background/BG.png",
+              "color": [ 0.0, 1.0, 1.0, 1.0 ],
+              "layer": -2,
+              "anchor": "Center"
+            },
+            {
+              "type": "Transform",
+              "location": [ 0, 0 ],
               "rotation": [ 0.0, 0.0, 0.0 ],
               "scale": [ 1.0, 1.0 ]
             }
