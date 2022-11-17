@@ -282,7 +282,7 @@
             {
               "type": "BoxCollider",
               "center": [ 20, 125 ],
-              "size": [ 280, 240 ]
+              "size": [ 280, 210 ]
             }
           ]
         },
@@ -306,7 +306,7 @@
               "type": "BoxCollider",
               "center": [ -120, 125 ],
               "size": [ 50, 250 ],
-              "collision_type": "Trigger"
+              "collision_type": "Solid"
             }
           ]
         },
