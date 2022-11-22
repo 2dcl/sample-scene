@@ -3,7 +3,7 @@
   "parcels": [ "0,0" ],
   "levels": [
     {
-      "name": "sample_level",
+      "name": "main_level",
       "entities": [
         {
           "name": "background",
@@ -988,24 +988,6 @@
     {
       "name": "interior",
       "entities": [
-        {
-          "name": "background",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Background/BG.png",
-              "color": [ 0.0, 1.0, 1.0, 1.0 ],
-              "layer": -2,
-              "anchor": "Center"
-            },
-            {
-              "type": "Transform",
-              "location": [ 0, 0 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        }
       ]
     }
   ]
