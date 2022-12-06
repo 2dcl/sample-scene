@@ -3,991 +3,1110 @@
   "parcels": [ "0,0" ],
   "levels": [
     {
-      "name": "main_level",
+      "name": "hub",
       "entities": [
         {
           "name": "background",
           "components": [
             {
               "type": "SpriteRenderer",
-              "sprite": "Background/BG.png",
+              "sprite": "hub/background.png",
+              "layer": -1
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 0, "y" : 0 }
+            }
+          ],
+          "children" : [
+            {
+              "name": "bushes",
+              "components" : [],
+              "children" : [
+                {
+                  "name" : "bush_back",
+                  "components" : [
+                    {
+                      "type" : "SpriteRenderer",
+                      "sprite" : "hub/bush_back.png",
+                      "layer" : 1
+                    },
+                    {
+                      "type" : "Transform",
+                      "location": { "x": 3, "y" : 222 }
+                    },
+                    {
+                      "type" : "BoxCollider",
+                      "center" : { "x": 0, "y": -20 },
+                      "size": { "width" : 500, "height" : 45 }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name" : "shadow",
+                      "components" : [
+                        {
+                          "type" : "SpriteRenderer",
+                          "sprite" : "hub/bush_back_shadow.png",
+                          "layer" : 0
+                        },
+                        {
+                          "type" : "Transform",
+                          "location": { "x": 0, "y" : 0 }
+                        }
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "bush_left",
+                  "components" : [
+                    {
+                      "type" : "SpriteRenderer",
+                      "sprite" : "hub/bush_left.png",
+                      "layer" : 1
+                    },
+                    {
+                      "type" : "Transform",
+                      "location": { "x": -235, "y" : 20 }
+                    },
+                    {
+                      "type" : "BoxCollider",
+                      "center" : { "x": -5, "y": -24 },
+                      "size": { "width" : 30, "height" : 457 }
+                    }
+
+                  ],
+                  "children": [
+                    {
+                      "name" : "shadow",
+                      "components" : [
+                        {
+                          "type" : "SpriteRenderer",
+                          "sprite" : "hub/bush_left_shadow.png",
+                          "layer" : 0
+                        },
+                        {
+                          "type" : "Transform",
+                          "location": { "x": 0, "y" : 0 }
+                        }
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "bush_right",
+                  "components" : [
+                    {
+                      "type" : "SpriteRenderer",
+                      "sprite" : "hub/bush_right.png",
+                      "layer" : 1
+                    },
+                    {
+                      "type" : "Transform",
+                      "location": { "x": 242, "y" : 20 }
+                    },
+                    {
+                      "type" : "BoxCollider",
+                      "center" : { "x": -5, "y": -24 },
+                      "size": { "width" : 30, "height" : 457 }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name" : "shadow",
+                      "components" : [
+                        {
+                          "type" : "SpriteRenderer",
+                          "sprite" : "hub/bush_right_shadow.png",
+                          "layer" : 0
+                        },
+                        {
+                          "type" : "Transform",
+                          "location": { "x": 0, "y" : 0 }
+                        }
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "bush_bottom_left",
+                  "components" : [
+                    {
+                      "type" : "SpriteRenderer",
+                      "sprite" : "hub/bush_bottom_left.png",
+                      "layer" : 1
+                    },
+                    {
+                      "type" : "Transform",
+                      "location": { "x": -140, "y" : -206 }
+                    },
+                    {
+                      "type" : "BoxCollider",
+                      "center" : { "x": -3, "y": -22 },
+                      "size": { "width" : 225, "height" : 45 }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name" : "shadow",
+                      "components" : [
+                        {
+                          "type" : "SpriteRenderer",
+                          "sprite" : "hub/bush_bottom_left_shadow.png",
+                          "layer" : 0
+                        },
+                        {
+                          "type" : "Transform",
+                          "location": { "x": 0, "y" : 0 }
+                        }
+                      ]
+                    }
+                  ]
+                },
+
+                {
+                  "name" : "bush_bottom_right",
+                  "components" : [
+                    {
+                      "type" : "SpriteRenderer",
+                      "sprite" : "hub/bush_bottom_right.png",
+                      "layer" : 1
+                    },
+                    {
+                      "type" : "Transform",
+                      "location": { "x": 182, "y" : -206 }
+                    },
+                    {
+                      "type" : "BoxCollider",
+                      "center" : { "x": -3, "y": -22 },
+                      "size": { "width" : 145, "height" : 45 }
+                    }
+
+                  ],
+                  "children": [
+                    {
+                      "name" : "shadow",
+                      "components" : [
+                        {
+                          "type" : "SpriteRenderer",
+                          "sprite" : "hub/bush_bottom_right_shadow.png",
+                          "layer" : 0
+                        },
+                        {
+                          "type" : "Transform",
+                          "location": { "x": 0, "y" : 0 }
+                        }
+
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "house",
+              "components" : [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "hub/house.png",
+                  "layer": 1,
+                  "anchor": "BottomCenter"
+
+                },
+                {
+                  "type": "Transform",
+                  "location": { "x": 35, "y" : -156 }
+                },
+                {
+                  "type" : "BoxCollider",
+                  "collision_type" : "Solid",
+                  "center" : { "x": 20, "y": 190 },
+                  "size": { "width" : 280, "height" : 350 }
+                }
+              ],
+              "children" : [
+                {
+                  "name" : "shadow",
+                  "components" : [
+                    {
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/house_shadow.png",
+                      "layer": 1,
+                      "anchor": "BottomCenter"
+                    }                    
+                  ]
+                },
+                {
+                  "name" : "house_side",
+                  "components" : [
+                    {
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/house_side.png",
+                      "layer": 0,
+                      "anchor": "BottomCenter"
+                    },
+                    {
+                      "type": "Transform",
+                      "location": { "x": -2, "y" : 95 }
+                    },
+                    {
+                      "type" : "BoxCollider",
+                      "center" : { "x": -90, "y": 100 },
+                      "size": { "width" : 100, "height" : 200 }
+                    }
+
+                  ],
+                  "children" : [
+                    {
+                      "name" : "shadow",
+                      "components" : [
+                        {
+                          "type": "SpriteRenderer",
+                          "sprite": "hub/house_side_shadow.png",
+                          "layer": 1,
+                          "anchor": "BottomCenter"
+                        },
+                        {
+                          "type": "Transform",
+                          "location": { "x": 0, "y" : -93 }
+                        }
+                      ]                      
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "flower",
+              "components" : [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "hub/flower.png",
+                  "layer": 0
+                },
+                {
+                  "type": "Transform",
+                  "location": { "x": -165, "y" : -148 }
+                }                
+              ]
+            },
+            {
+              "name" : "flower2",
+              "components" : [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "hub/flower2.png",
+                  "layer": 0
+                },
+                {
+                  "type": "Transform",
+                  "location": { "x": -151, "y" : -92 }
+                }                
+              ]
+            },
+            {
+              "name" : "flower3",
+              "components" : [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "hub/flower3.png",
+                  "layer": 0
+                },
+                {
+                  "type": "Transform",
+                  "location": { "x": -99, "y" : -108 }
+                }                
+
+              ]
+            },
+            {
+              "name" : "tree",
+              "components" : [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "hub/tree.png",
+                  "layer": 1,
+                  "anchor": "BottomCenter"
+                },
+                {
+                  "type": "Transform",
+                  "location": { "x": -137, "y" : 93 }
+                },
+                {
+                  "type" : "BoxCollider",
+                  "center": { "x" : -10, "y" : 45 },
+                  "size": { "width" : 50, "height" : 50 }
+                }
+              ],
+              "children" : [
+                {
+                  "name" : "shadow",
+                  "components" : [
+                    {
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/tree_shadow.png",
+                      "layer": 0
+                    },
+                    {
+                      "type": "Transform",
+                      "location": { "x": -4, "y" : 54 }
+                    }
+                  ]
+                }
+              ] 
+
+            }
+
+          ]
+        },
+        {
+          "name" : "level_change",
+          "components" : [
+            {
+              "type": "LevelChange",
+              "level": "interior",
+              "spawn_point" : { "x": 100, "y": -350 }
+            },
+            {
+              "type" : "BoxCollider",
+              "collision_type" : "Trigger",
+              "center" : { "x": 50, "y": -150 },
+              "size": { "width" : 50, "height" : 50 }
+            }
+
+          ]
+        }
+
+      ]
+    },
+    
+    {
+      "name": "interior",
+      "entities": [
+        {
+          "name" : "level_change",
+          "components" : [
+            {
+              "type": "LevelChange",
+              "level": "hub",
+              "spawn_point" : { "x": 55, "y": -180 }
+            },
+            {
+              "type" : "BoxCollider",
+              "collision_type" : "Trigger",
+              "center" : { "x": 100, "y": -350 },
+              "size": { "width" : 200, "height" : 50 }
+            }
+
+          ]
+        },
+
+        {
+          "name" : "background",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/background.png",
               "color": [ 1.0, 1.0, 1.0, 1.0 ],
               "layer": -2,
+              "anchor": "Center"
+            }
+          ],
+          "children": [
+              {
+                "name" : "top_boundary",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": 0, "y": 415 },
+                    "size" : { "width": 1000, "height": 20 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "bottom_left_boundary",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": -380, "y": -140 },
+                    "size" : { "width": 250, "height": 30 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "bottom_right_boundary",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": 100, "y": -380 },
+                    "size" : { "width": 800, "height": 30 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "right_boundary",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": 455, "y": 0 },
+                    "size" : { "width": 30, "height": 1000 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "left_top_boundary",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": -455, "y": 0 },
+                    "size" : { "width": 30, "height": 1000 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "left_bottom_boundary",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": -270, "y": -300 },
+                    "size" : { "width": 30, "height": 300 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "level_left",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": -346, "y": 130 },
+                    "size" : { "width": 30, "height": 410 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "level_right",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": 30, "y": 65 },
+                    "size" : { "width": 30, "height": 310 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "level_top",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": -161, "y": 315 },
+                    "size" : { "width": 340, "height": 40 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "level_bottom_left",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": -326, "y": -70 },
+                    "size" : { "width": 70, "height": 40 }
+                  }
+                ]
+              },
+
+              {
+                "name" : "level_bottom_right",
+                "components" : [
+                  {
+                    "type": "BoxCollider",
+                    "center" : { "x": -90, "y": -70 },
+                    "size" : { "width": 220, "height": 40 }
+                  }
+                ]
+              }
+          ]
+        },
+        {
+          "name" : "lights",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/background_lights.png",
+              "color": [ 1.0, 1.0, 1.0, 0.8 ],
+              "layer": -1,
+              "anchor": "Center"
+            }
+          ]
+        },
+        {
+          "name" : "table",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/table.png",
               "anchor": "Center"
             },
             {
               "type": "Transform",
-              "location": [ 0, 0 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
+              "location": { "x": -172, "y": 126 }
+            },
+            {
+              "type" : "BoxCollider",
+              "size": { "width" : 140, "height" : 120 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/table_shadow.png"
+                },
+                {
+                  "type" : "BoxCollider",
+                  "center" : { "x": 0, "y": -70 },
+                  "size": { "width" : 50, "height" : 50 }
+                }
+
+              ]
+            },
+            {
+              "name" : "chair left",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/chair_left.png",
+                  "anchor": "Center"
+                },
+                {
+                  "type": "Transform",
+                  "location": { "x": -106, "y": 16 }
+                },
+                {
+                  "type" : "BoxCollider",
+                  "center" : { "x": 0, "y": -10 },
+                  "size": { "width" : 40, "height" : 40 }
+                }
+              ],
+              "children" : [
+                {
+                  "name" : "shadow",
+                  "components": [
+                    {
+                      "type": "SpriteRenderer",
+                      "sprite": "interior/chair_left_shadow.png",
+                      "anchor": "Center"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "chair right",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/chair_right.png",
+                  "anchor": "Center"
+                },
+                {
+                  "type": "Transform",
+                  "location": { "x": 108, "y": -10 }
+                },
+                {
+                  "type" : "BoxCollider",
+                  "center" : { "x": 0, "y": -10 },
+                  "size": { "width" : 40, "height" : 40 }
+                }
+              ],
+              "children" : [
+                {
+                  "name" : "shadow",
+                  "components": [
+                    {
+                      "type": "SpriteRenderer",
+                      "sprite": "interior/chair_right_shadow.png",
+                      "anchor": "Center"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
+
         {
-          "name": "tree",
-          "components": [
+          "name" : "library",
+          "components" : [
             {
               "type": "SpriteRenderer",
-              "sprite": "Arbol/Arbol.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
+              "sprite": "interior/library.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": -395, "y": 420 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": -5, "y": 0 },
+              "size": { "width" : 80, "height" : 90 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/library_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "storage",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/storage.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": -170, "y": 422 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": 0 },
+              "size": { "width" : 250, "height" : 90 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/storage_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "shelves",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/shelves.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": -30, "y": 423 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": 0 },
+              "size": { "width" : 30, "height" : 90 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/shelves_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "pantry",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/pantry.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 23, "y": 429 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": -10, "y": 0 },
+              "size": { "width" : 50, "height" : 100 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/pantry_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "kitchen",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/kitchen.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 208, "y": 411 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": 0 },
+              "size": { "width" : 150, "height" : 150 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/kitchen_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "isle_top",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/isle_top.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 385, "y": 380 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": 0 },
+              "size": { "width" : 150, "height" : 120 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/isle_top_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "isle_bottom",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/isle_bottom.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 385, "y": 238 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": 50, "y": 5 },
+              "size": { "width" : 100, "height" : 160 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/isle_bottom_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "bar_front",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/bar_front.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 293, "y": 101 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": -20 },
+              "size": { "width" : 330, "height" : 40 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/bar_front_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "bar_side",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/bar_side.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 293, "y": 187 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": -140, "y": -50 },
+              "size": { "width" : 50, "height" : 100 }
+            }
+          ]
+        },
+
+        {
+          "name" : "stool 1",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/stool.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 199, "y": 55 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": -10, "y": 0 },
+              "size": { "width" : 40, "height" : 40 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/stool_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "stool 2",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/stool.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 262, "y": 46 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": -10, "y": 0 },
+              "size": { "width" : 40, "height" : 40 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/stool_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "stool 3",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/stool.png",
+              "layer": 0
+            },
+            {
+              "type": "Transform",
+              "location": { "x": 321, "y": 55 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": -10, "y": 0 },
+              "size": { "width" : 40, "height" : 40 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/stool_shadow.png"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "name" : "lamp",
+          "components" : [
+            {
+              "type": "SpriteRenderer",
+              "sprite": "interior/lamp.png",
               "layer": 0,
               "anchor": "BottomCenter"
             },
             {
               "type": "Transform",
-              "location": [ 60, -75 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
+              "location": { "x": 420, "y": -117 }
             },
             {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 75, 75 ]
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": 20 },
+              "size": { "width" : 40, "height" : 40 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/lamp_shadow.png",
+                  "layer": -1,
+                  "anchor": "BottomCenter"
+                }
+              ]
             }
           ]
         },
+
         {
-          "name": "tree_shadow",
-          "components": [
+          "name" : "couch",
+          "components" : [
             {
               "type": "SpriteRenderer",
-              "sprite": "Arbol/Arbol_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-
-
-              "anchor": "BottomCenter"
+              "sprite": "interior/couch.png",
+              "layer": 0
             },
             {
               "type": "Transform",
-              "location": [ 60, -75 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
+              "location": { "x": 416, "y": -234 }
+            },
+            {
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": -20 },
+              "size": { "width" : 90, "height" : 170 }
+            }
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/couch_shadow.png"
+                }
+              ]
             }
           ]
         },
+
         {
-          "name": "bench_h1",
-          "components": [
+          "name" : "pot",
+          "components" : [
             {
               "type": "SpriteRenderer",
-              "sprite": "Banca-H/Banca_H.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 55, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 10 ],
-              "size": [ 100, 20 ]
-            }
-          ]
-        },
-        {
-          "name": "bench_shadow_h1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Banca-H/Banca_H_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 55, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bench_h2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Banca-H/Banca_H.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 460, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 10 ],
-              "size": [ 100, 20 ]
-            }
-          ]
-        },
-        {
-          "name": "bench_shadow_h2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Banca-H/Banca_H_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 460, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bench_v1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Banca-V/Banca_V.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
+              "sprite": "interior/pot.png",
               "layer": 0,
               "anchor": "BottomCenter"
             },
             {
               "type": "Transform",
-              "location": [ -410, -140 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
+              "location": { "x": -227, "y": -356 }
             },
             {
-              "type": "BoxCollider",
-              "center": [ 0, 50 ],
-              "size": [ 50, 100 ]
+              "type" : "BoxCollider",
+              "center" : { "x": 0, "y": 20 },
+              "size": { "width" : 40, "height" : 40 }
             }
-          ]
-        },
-        {
-          "name": "bench_shadow_v1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Banca-V/Banca_V_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -140 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bench_v2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Banca-V/Banca_V.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -580 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 50 ],
-              "size": [ 50, 100 ]
-            }
-          ]
-        },
-        {
-          "name": "bench_shadow_v2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Banca-V/Banca_V_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -580 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "level_change",
-          "components": [
-            {
-              "type": "Transform",
-              "location": [ 225, -320 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 0 ],
-              "size": [ 100, 100 ],
-              "collision_type": "Trigger"
-            },
-            {
-              "type": "LevelChange",
-              "level": "interior",
-              "spawn_point": {
-                "x": 0,
-                "y": 0
-              }
-            }
-          ]
-        },
-        {
-          "name": "house_main",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Casa/Casa_2.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 225, -320 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 20, 125 ],
-              "size": [ 280, 210 ]
-            }
-          ]
-        },
-        {
-          "name": "house_side",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Casa/Casa_1.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 223, -225 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ -120, 125 ],
-              "size": [ 50, 250 ],
-              "collision_type": "Solid"
-            }
-          ]
-        },
-        {
-          "name": "house_shadow1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Casa/Casa_1_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 225, -320 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "house_shadow1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Casa/Casa_2_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 225, -320 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "lamp1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Farol/Farol.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -350 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 50, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "lamp_light1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Farol/Farol_luz.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 1,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -350 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "lamp_shadow1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Farol/Farol_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -350 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "lamp2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Farol/Farol.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 250, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 50, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "lamp_light2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Farol/Farol_luz.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 1,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 250, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "lamp_shadow2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Farol/Farol_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-
-
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 250, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "flower_1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Flores/Flor1.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "flip": {
-                "x": true,
-                "y": false
-              },
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 40, -250 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "flower_2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Flores/Flor1.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 75, -280 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "flower_3",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Flores/Flor2.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 30, -325 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_h1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-H/Maceta_H.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -70, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 75, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_shadow_h1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-H/Maceta_H_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -70, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_h2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-H/Maceta_H.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 165, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 75, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_shadow_h2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-H/Maceta_H_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 165, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_h3",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-H/Maceta_H.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 345, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 75, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_shadow_h3",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-H/Maceta_H_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 345, 290 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_v1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-V/Maceta_V.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -15 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 37 ],
-              "size": [ 30, 75 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_shadow_v1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-V/Maceta_V_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -15 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_v2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-V/Maceta_V.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -250 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 37 ],
-              "size": [ 30, 75 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_shadow_v2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-V/Maceta_V_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, 0 ],
-              "rotation": [ 0.0, 0.0, -250.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_v3",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-V/Maceta_V.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -450 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 37 ],
-              "size": [ 30, 75 ]
-            }
-          ]
-        },
-        {
-          "name": "plants_shadow_v3",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Maceta-V/Maceta_V_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -410, -450 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bush1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Atras/Medianera_Atras.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 200, 5 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 475, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "bush_shadow1",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Atras/Medianera_Atras_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 200, 5 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bush2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Lateral_izq/Lateral_izq.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -25, -400 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 220 ],
-              "size": [ 50, 450 ]
-            }
-          ]
-        },
-        {
-          "name": "bush_shadow2",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Lateral_izq/Lateral_izq_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ -25, -400 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bush3",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Lateral_der/Lateral_der.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 418, -380 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 210 ],
-              "size": [ 40, 425 ]
-            }
-          ]
-        },
-        {
-          "name": "bush_shadow3",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Lateral_der/Lateral_der_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 418, -380 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bush4",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Frente_izq/Frente_izq.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 67, -425 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ 0, 25 ],
-              "size": [ 210, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "bush_shadow4",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Frente_izq/Frente_izq_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 67, -425 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            }
-          ]
-        },
-        {
-          "name": "bush5",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Frente_der/Frente_der.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": 0,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 370, -425 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
-            },
-            {
-              "type": "BoxCollider",
-              "center": [ -10, 25 ],
-              "size": [ 140, 50 ]
-            }
-          ]
-        },
-        {
-          "name": "bush_shadow5",
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "sprite": "Medianera/Frente_der/Frente_der_sh.png",
-              "color": [ 1.0, 1.0, 1.0, 1.0 ],
-              "layer": -1,
-              "anchor": "BottomCenter"
-            },
-            {
-              "type": "Transform",
-              "location": [ 370, -425 ],
-              "rotation": [ 0.0, 0.0, 0.0 ],
-              "scale": [ 1.0, 1.0 ]
+          ],
+          "children" : [
+            {
+              "name" : "shadow",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "interior/pot_shadow.png",
+                  "anchor": "BottomCenter"
+                }
+              ]
             }
           ]
         }
-      ]
-    },
-    {
-      "name": "interior",
-      "entities": [
       ]
     }
   ]
