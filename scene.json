@@ -1,6 +1,5 @@
 {
   "name": "Sample Scene",
-  "parcels": [ "0,0" ],
   "levels": [
     {
       "name": "hub",
