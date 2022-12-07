@@ -3,6 +3,10 @@
   "levels": [
     {
       "name": "hub",
+      "spawn_point": {
+        "x": 50,
+        "y": -200
+      },
       "entities": [
         {
           "name": "background",
