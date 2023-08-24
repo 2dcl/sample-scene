@@ -1,5 +1,7 @@
 {
   "name": "Sample Scene",
+  "parcels": [ "-25,7" ],
+  "base": "-25,7",
   "levels": [
     {
       "name": "hub",
@@ -18,44 +20,59 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 0, "y" : 0 }
+              "location": {
+                "x": 0,
+                "y": 0
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
               "name": "bushes",
-              "components" : [],
-              "children" : [
+              "components": [],
+              "children": [
                 {
-                  "name" : "bush_back",
-                  "components" : [
+                  "name": "bush_back",
+                  "components": [
                     {
-                      "type" : "SpriteRenderer",
-                      "sprite" : "hub/bush_back.png",
-                      "layer" : 1
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/bush_back.png",
+                      "layer": 1
                     },
                     {
-                      "type" : "Transform",
-                      "location": { "x": 3, "y" : 222 }
+                      "type": "Transform",
+                      "location": {
+                        "x": 3,
+                        "y": 222
+                      }
                     },
                     {
-                      "type" : "BoxCollider",
-                      "center" : { "x": 0, "y": -20 },
-                      "size": { "width" : 500, "height" : 45 }
+                      "type": "BoxCollider",
+                      "center": {
+                        "x": 0,
+                        "y": -20
+                      },
+                      "size": {
+                        "width": 500,
+                        "height": 45
+                      }
                     }
                   ],
                   "children": [
                     {
-                      "name" : "shadow",
-                      "components" : [
+                      "name": "shadow",
+                      "components": [
                         {
-                          "type" : "SpriteRenderer",
-                          "sprite" : "hub/bush_back_shadow.png",
-                          "layer" : 0
+                          "type": "SpriteRenderer",
+                          "sprite": "hub/bush_back_shadow.png",
+                          "layer": 0
                         },
                         {
-                          "type" : "Transform",
-                          "location": { "x": 0, "y" : 0 }
+                          "type": "Transform",
+                          "location": {
+                            "x": 0,
+                            "y": 0
+                          }
                         }
 
                       ]
@@ -63,36 +80,48 @@
                   ]
                 },
                 {
-                  "name" : "bush_left",
-                  "components" : [
+                  "name": "bush_left",
+                  "components": [
                     {
-                      "type" : "SpriteRenderer",
-                      "sprite" : "hub/bush_left.png",
-                      "layer" : 1
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/bush_left.png",
+                      "layer": 1
                     },
                     {
-                      "type" : "Transform",
-                      "location": { "x": -235, "y" : 20 }
+                      "type": "Transform",
+                      "location": {
+                        "x": -235,
+                        "y": 20
+                      }
                     },
                     {
-                      "type" : "BoxCollider",
-                      "center" : { "x": -5, "y": -24 },
-                      "size": { "width" : 30, "height" : 457 }
+                      "type": "BoxCollider",
+                      "center": {
+                        "x": -5,
+                        "y": -24
+                      },
+                      "size": {
+                        "width": 30,
+                        "height": 457
+                      }
                     }
 
                   ],
                   "children": [
                     {
-                      "name" : "shadow",
-                      "components" : [
+                      "name": "shadow",
+                      "components": [
                         {
-                          "type" : "SpriteRenderer",
-                          "sprite" : "hub/bush_left_shadow.png",
-                          "layer" : 0
+                          "type": "SpriteRenderer",
+                          "sprite": "hub/bush_left_shadow.png",
+                          "layer": 0
                         },
                         {
-                          "type" : "Transform",
-                          "location": { "x": 0, "y" : 0 }
+                          "type": "Transform",
+                          "location": {
+                            "x": 0,
+                            "y": 0
+                          }
                         }
 
                       ]
@@ -100,35 +129,47 @@
                   ]
                 },
                 {
-                  "name" : "bush_right",
-                  "components" : [
+                  "name": "bush_right",
+                  "components": [
                     {
-                      "type" : "SpriteRenderer",
-                      "sprite" : "hub/bush_right.png",
-                      "layer" : 1
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/bush_right.png",
+                      "layer": 1
                     },
                     {
-                      "type" : "Transform",
-                      "location": { "x": 242, "y" : 20 }
+                      "type": "Transform",
+                      "location": {
+                        "x": 242,
+                        "y": 20
+                      }
                     },
                     {
-                      "type" : "BoxCollider",
-                      "center" : { "x": -5, "y": -24 },
-                      "size": { "width" : 30, "height" : 457 }
+                      "type": "BoxCollider",
+                      "center": {
+                        "x": -5,
+                        "y": -24
+                      },
+                      "size": {
+                        "width": 30,
+                        "height": 457
+                      }
                     }
                   ],
                   "children": [
                     {
-                      "name" : "shadow",
-                      "components" : [
+                      "name": "shadow",
+                      "components": [
                         {
-                          "type" : "SpriteRenderer",
-                          "sprite" : "hub/bush_right_shadow.png",
-                          "layer" : 0
+                          "type": "SpriteRenderer",
+                          "sprite": "hub/bush_right_shadow.png",
+                          "layer": 0
                         },
                         {
-                          "type" : "Transform",
-                          "location": { "x": 0, "y" : 0 }
+                          "type": "Transform",
+                          "location": {
+                            "x": 0,
+                            "y": 0
+                          }
                         }
 
                       ]
@@ -136,35 +177,47 @@
                   ]
                 },
                 {
-                  "name" : "bush_bottom_left",
-                  "components" : [
+                  "name": "bush_bottom_left",
+                  "components": [
                     {
-                      "type" : "SpriteRenderer",
-                      "sprite" : "hub/bush_bottom_left.png",
-                      "layer" : 1
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/bush_bottom_left.png",
+                      "layer": 1
                     },
                     {
-                      "type" : "Transform",
-                      "location": { "x": -140, "y" : -206 }
+                      "type": "Transform",
+                      "location": {
+                        "x": -140,
+                        "y": -206
+                      }
                     },
                     {
-                      "type" : "BoxCollider",
-                      "center" : { "x": -3, "y": -22 },
-                      "size": { "width" : 225, "height" : 45 }
+                      "type": "BoxCollider",
+                      "center": {
+                        "x": -3,
+                        "y": -22
+                      },
+                      "size": {
+                        "width": 225,
+                        "height": 45
+                      }
                     }
                   ],
                   "children": [
                     {
-                      "name" : "shadow",
-                      "components" : [
+                      "name": "shadow",
+                      "components": [
                         {
-                          "type" : "SpriteRenderer",
-                          "sprite" : "hub/bush_bottom_left_shadow.png",
-                          "layer" : 0
+                          "type": "SpriteRenderer",
+                          "sprite": "hub/bush_bottom_left_shadow.png",
+                          "layer": 0
                         },
                         {
-                          "type" : "Transform",
-                          "location": { "x": 0, "y" : 0 }
+                          "type": "Transform",
+                          "location": {
+                            "x": 0,
+                            "y": 0
+                          }
                         }
                       ]
                     }
@@ -172,36 +225,48 @@
                 },
 
                 {
-                  "name" : "bush_bottom_right",
-                  "components" : [
+                  "name": "bush_bottom_right",
+                  "components": [
                     {
-                      "type" : "SpriteRenderer",
-                      "sprite" : "hub/bush_bottom_right.png",
-                      "layer" : 1
+                      "type": "SpriteRenderer",
+                      "sprite": "hub/bush_bottom_right.png",
+                      "layer": 1
                     },
                     {
-                      "type" : "Transform",
-                      "location": { "x": 182, "y" : -206 }
+                      "type": "Transform",
+                      "location": {
+                        "x": 182,
+                        "y": -206
+                      }
                     },
                     {
-                      "type" : "BoxCollider",
-                      "center" : { "x": -3, "y": -22 },
-                      "size": { "width" : 145, "height" : 45 }
+                      "type": "BoxCollider",
+                      "center": {
+                        "x": -3,
+                        "y": -22
+                      },
+                      "size": {
+                        "width": 145,
+                        "height": 45
+                      }
                     }
 
                   ],
                   "children": [
                     {
-                      "name" : "shadow",
-                      "components" : [
+                      "name": "shadow",
+                      "components": [
                         {
-                          "type" : "SpriteRenderer",
-                          "sprite" : "hub/bush_bottom_right_shadow.png",
-                          "layer" : 0
+                          "type": "SpriteRenderer",
+                          "sprite": "hub/bush_bottom_right_shadow.png",
+                          "layer": 0
                         },
                         {
-                          "type" : "Transform",
-                          "location": { "x": 0, "y" : 0 }
+                          "type": "Transform",
+                          "location": {
+                            "x": 0,
+                            "y": 0
+                          }
                         }
 
                       ]
@@ -211,41 +276,86 @@
               ]
             },
             {
-              "name" : "house",
-              "components" : [
+              "name": "lamp",
+              "components": [
                 {
                   "type": "SpriteRenderer",
-                  "sprite": "hub/house.png",
+                  "sprite": "Lamp.png",
                   "layer": 1,
-                  "anchor": "BottomCenter"
+                  "anchor": "BottomCenter",
+                  "color": [ 1.0, 1.0, 1.0, 1.0 ]
 
                 },
                 {
                   "type": "Transform",
-                  "location": { "x": 35, "y" : -156 }
-                },
-                {
-                  "type" : "BoxCollider",
-                  "collision_type" : "Solid",
-                  "center" : { "x": 20, "y": 190 },
-                  "size": { "width" : 280, "height" : 350 }
+                  "location": {
+                    "x": -100,
+                    "y": -156
+                  }
                 }
               ],
-              "children" : [
+              "children": [
                 {
-                  "name" : "shadow",
-                  "components" : [
+                  "name": "lamp_light",
+                  "components": [
+                    {
+                      "type": "SpriteRenderer",
+                      "sprite": "Lamp_light.png",
+                      "layer": 1,
+                      "anchor": "BottomCenter",
+                      "color": [ 2.0, 2.0, 1.0, 1.0 ]
+
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "house",
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "sprite": "hub/house.png",
+                  "layer": 1,
+                  "anchor": "BottomCenter",
+                  "color": [ 1.0, 1.0, 1.0, 1.0 ]
+
+                },
+                {
+                  "type": "Transform",
+                  "location": {
+                    "x": 35,
+                    "y": -156
+                  }
+                },
+                {
+                  "type": "BoxCollider",
+                  "collision_type": "Solid",
+                  "center": {
+                    "x": 20,
+                    "y": 190
+                  },
+                  "size": {
+                    "width": 280,
+                    "height": 350
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "name": "shadow",
+                  "components": [
                     {
                       "type": "SpriteRenderer",
                       "sprite": "hub/house_shadow.png",
                       "layer": 1,
                       "anchor": "BottomCenter"
-                    }                    
+                    }
                   ]
                 },
                 {
-                  "name" : "house_side",
-                  "components" : [
+                  "name": "house_side",
+                  "components": [
                     {
                       "type": "SpriteRenderer",
                       "sprite": "hub/house_side.png",
@@ -254,19 +364,28 @@
                     },
                     {
                       "type": "Transform",
-                      "location": { "x": -2, "y" : 95 }
+                      "location": {
+                        "x": -2,
+                        "y": 95
+                      }
                     },
                     {
-                      "type" : "BoxCollider",
-                      "center" : { "x": -90, "y": 100 },
-                      "size": { "width" : 100, "height" : 200 }
+                      "type": "BoxCollider",
+                      "center": {
+                        "x": -90,
+                        "y": 100
+                      },
+                      "size": {
+                        "width": 100,
+                        "height": 200
+                      }
                     }
 
                   ],
-                  "children" : [
+                  "children": [
                     {
-                      "name" : "shadow",
-                      "components" : [
+                      "name": "shadow",
+                      "components": [
                         {
                           "type": "SpriteRenderer",
                           "sprite": "hub/house_side_shadow.png",
@@ -275,17 +394,20 @@
                         },
                         {
                           "type": "Transform",
-                          "location": { "x": 0, "y" : -93 }
+                          "location": {
+                            "x": 0,
+                            "y": -93
+                          }
                         }
-                      ]                      
+                      ]
                     }
                   ]
                 }
               ]
             },
             {
-              "name" : "flower",
-              "components" : [
+              "name": "flower",
+              "components": [
                 {
                   "type": "SpriteRenderer",
                   "sprite": "hub/flower.png",
@@ -293,13 +415,16 @@
                 },
                 {
                   "type": "Transform",
-                  "location": { "x": -165, "y" : -148 }
-                }                
+                  "location": {
+                    "x": -165,
+                    "y": -148
+                  }
+                }
               ]
             },
             {
-              "name" : "flower2",
-              "components" : [
+              "name": "flower2",
+              "components": [
                 {
                   "type": "SpriteRenderer",
                   "sprite": "hub/flower2.png",
@@ -307,13 +432,16 @@
                 },
                 {
                   "type": "Transform",
-                  "location": { "x": -151, "y" : -92 }
-                }                
+                  "location": {
+                    "x": -151,
+                    "y": -92
+                  }
+                }
               ]
             },
             {
-              "name" : "flower3",
-              "components" : [
+              "name": "flower3",
+              "components": [
                 {
                   "type": "SpriteRenderer",
                   "sprite": "hub/flower3.png",
@@ -321,14 +449,17 @@
                 },
                 {
                   "type": "Transform",
-                  "location": { "x": -99, "y" : -108 }
-                }                
+                  "location": {
+                    "x": -99,
+                    "y": -108
+                  }
+                }
 
               ]
             },
             {
-              "name" : "tree",
-              "components" : [
+              "name": "tree",
+              "components": [
                 {
                   "type": "SpriteRenderer",
                   "sprite": "hub/tree.png",
@@ -337,18 +468,27 @@
                 },
                 {
                   "type": "Transform",
-                  "location": { "x": -137, "y" : 93 }
+                  "location": {
+                    "x": -137,
+                    "y": 93
+                  }
                 },
                 {
-                  "type" : "BoxCollider",
-                  "center": { "x" : -10, "y" : 45 },
-                  "size": { "width" : 50, "height" : 50 }
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -10,
+                    "y": 45
+                  },
+                  "size": {
+                    "width": 50,
+                    "height": 50
+                  }
                 }
               ],
-              "children" : [
+              "children": [
                 {
-                  "name" : "shadow",
-                  "components" : [
+                  "name": "shadow",
+                  "components": [
                     {
                       "type": "SpriteRenderer",
                       "sprite": "hub/tree_shadow.png",
@@ -356,29 +496,41 @@
                     },
                     {
                       "type": "Transform",
-                      "location": { "x": -4, "y" : 54 }
+                      "location": {
+                        "x": -4,
+                        "y": 54
+                      }
                     }
                   ]
                 }
-              ] 
+              ]
 
             }
 
           ]
         },
         {
-          "name" : "level_change",
-          "components" : [
+          "name": "level_change",
+          "components": [
             {
               "type": "LevelChange",
               "level": "interior",
-              "spawn_point" : { "x": 100, "y": -350 }
+              "spawn_point": {
+                "x": 100,
+                "y": -350
+              }
             },
             {
-              "type" : "BoxCollider",
-              "collision_type" : "Trigger",
-              "center" : { "x": 50, "y": -150 },
-              "size": { "width" : 50, "height" : 50 }
+              "type": "BoxCollider",
+              "collision_type": "Trigger",
+              "center": {
+                "x": 50,
+                "y": -150
+              },
+              "size": {
+                "width": 50,
+                "height": 50
+              }
             }
 
           ]
@@ -386,31 +538,40 @@
 
       ]
     },
-    
+
     {
       "name": "interior",
       "entities": [
         {
-          "name" : "level_change",
-          "components" : [
+          "name": "level_change",
+          "components": [
             {
               "type": "LevelChange",
               "level": "hub",
-              "spawn_point" : { "x": 55, "y": -180 }
+              "spawn_point": {
+                "x": 55,
+                "y": -180
+              }
             },
             {
-              "type" : "BoxCollider",
-              "collision_type" : "Trigger",
-              "center" : { "x": 100, "y": -350 },
-              "size": { "width" : 200, "height" : 50 }
+              "type": "BoxCollider",
+              "collision_type": "Trigger",
+              "center": {
+                "x": 100,
+                "y": -350
+              },
+              "size": {
+                "width": 200,
+                "height": 50
+              }
             }
 
           ]
         },
 
         {
-          "name" : "background",
-          "components" : [
+          "name": "background",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/background.png",
@@ -420,131 +581,197 @@
             }
           ],
           "children": [
-              {
-                "name" : "top_boundary",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": 0, "y": 415 },
-                    "size" : { "width": 1000, "height": 20 }
+            {
+              "name": "top_boundary",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": 0,
+                    "y": 415
+                  },
+                  "size": {
+                    "width": 1000,
+                    "height": 20
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "bottom_left_boundary",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": -380, "y": -140 },
-                    "size" : { "width": 250, "height": 30 }
+            {
+              "name": "bottom_left_boundary",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -380,
+                    "y": -140
+                  },
+                  "size": {
+                    "width": 250,
+                    "height": 30
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "bottom_right_boundary",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": 100, "y": -380 },
-                    "size" : { "width": 800, "height": 30 }
+            {
+              "name": "bottom_right_boundary",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": 100,
+                    "y": -380
+                  },
+                  "size": {
+                    "width": 800,
+                    "height": 30
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "right_boundary",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": 455, "y": 0 },
-                    "size" : { "width": 30, "height": 1000 }
+            {
+              "name": "right_boundary",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": 455,
+                    "y": 0
+                  },
+                  "size": {
+                    "width": 30,
+                    "height": 1000
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "left_top_boundary",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": -455, "y": 0 },
-                    "size" : { "width": 30, "height": 1000 }
+            {
+              "name": "left_top_boundary",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -455,
+                    "y": 0
+                  },
+                  "size": {
+                    "width": 30,
+                    "height": 1000
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "left_bottom_boundary",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": -270, "y": -300 },
-                    "size" : { "width": 30, "height": 300 }
+            {
+              "name": "left_bottom_boundary",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -270,
+                    "y": -300
+                  },
+                  "size": {
+                    "width": 30,
+                    "height": 300
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "level_left",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": -346, "y": 130 },
-                    "size" : { "width": 30, "height": 410 }
+            {
+              "name": "level_left",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -346,
+                    "y": 130
+                  },
+                  "size": {
+                    "width": 30,
+                    "height": 410
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "level_right",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": 30, "y": 65 },
-                    "size" : { "width": 30, "height": 310 }
+            {
+              "name": "level_right",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": 30,
+                    "y": 65
+                  },
+                  "size": {
+                    "width": 30,
+                    "height": 310
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "level_top",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": -161, "y": 315 },
-                    "size" : { "width": 340, "height": 40 }
+            {
+              "name": "level_top",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -161,
+                    "y": 315
+                  },
+                  "size": {
+                    "width": 340,
+                    "height": 40
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "level_bottom_left",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": -326, "y": -70 },
-                    "size" : { "width": 70, "height": 40 }
+            {
+              "name": "level_bottom_left",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -326,
+                    "y": -70
+                  },
+                  "size": {
+                    "width": 70,
+                    "height": 40
                   }
-                ]
-              },
+                }
+              ]
+            },
 
-              {
-                "name" : "level_bottom_right",
-                "components" : [
-                  {
-                    "type": "BoxCollider",
-                    "center" : { "x": -90, "y": -70 },
-                    "size" : { "width": 220, "height": 40 }
+            {
+              "name": "level_bottom_right",
+              "components": [
+                {
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": -90,
+                    "y": -70
+                  },
+                  "size": {
+                    "width": 220,
+                    "height": 40
                   }
-                ]
-              }
+                }
+              ]
+            }
           ]
         },
         {
-          "name" : "lights",
-          "components" : [
+          "name": "lights",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/background_lights.png",
@@ -555,8 +782,8 @@
           ]
         },
         {
-          "name" : "table",
-          "components" : [
+          "name": "table",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/table.png",
@@ -564,31 +791,43 @@
             },
             {
               "type": "Transform",
-              "location": { "x": -172, "y": 126 }
+              "location": {
+                "x": -172,
+                "y": 126
+              }
             },
             {
-              "type" : "BoxCollider",
-              "size": { "width" : 140, "height" : 120 }
+              "type": "BoxCollider",
+              "size": {
+                "width": 140,
+                "height": 120
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
                   "sprite": "interior/table_shadow.png"
                 },
                 {
-                  "type" : "BoxCollider",
-                  "center" : { "x": 0, "y": -70 },
-                  "size": { "width" : 50, "height" : 50 }
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": 0,
+                    "y": -70
+                  },
+                  "size": {
+                    "width": 50,
+                    "height": 50
+                  }
                 }
 
               ]
             },
             {
-              "name" : "chair left",
+              "name": "chair left",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -597,17 +836,26 @@
                 },
                 {
                   "type": "Transform",
-                  "location": { "x": -106, "y": 16 }
+                  "location": {
+                    "x": -106,
+                    "y": 16
+                  }
                 },
                 {
-                  "type" : "BoxCollider",
-                  "center" : { "x": 0, "y": -10 },
-                  "size": { "width" : 40, "height" : 40 }
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": 0,
+                    "y": -10
+                  },
+                  "size": {
+                    "width": 40,
+                    "height": 40
+                  }
                 }
               ],
-              "children" : [
+              "children": [
                 {
-                  "name" : "shadow",
+                  "name": "shadow",
                   "components": [
                     {
                       "type": "SpriteRenderer",
@@ -619,7 +867,7 @@
               ]
             },
             {
-              "name" : "chair right",
+              "name": "chair right",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -628,17 +876,26 @@
                 },
                 {
                   "type": "Transform",
-                  "location": { "x": 108, "y": -10 }
+                  "location": {
+                    "x": 108,
+                    "y": -10
+                  }
                 },
                 {
-                  "type" : "BoxCollider",
-                  "center" : { "x": 0, "y": -10 },
-                  "size": { "width" : 40, "height" : 40 }
+                  "type": "BoxCollider",
+                  "center": {
+                    "x": 0,
+                    "y": -10
+                  },
+                  "size": {
+                    "width": 40,
+                    "height": 40
+                  }
                 }
               ],
-              "children" : [
+              "children": [
                 {
-                  "name" : "shadow",
+                  "name": "shadow",
                   "components": [
                     {
                       "type": "SpriteRenderer",
@@ -653,8 +910,8 @@
         },
 
         {
-          "name" : "library",
-          "components" : [
+          "name": "library",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/library.png",
@@ -662,17 +919,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": -395, "y": 420 }
+              "location": {
+                "x": -395,
+                "y": 420
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": -5, "y": 0 },
-              "size": { "width" : 80, "height" : 90 }
+              "type": "BoxCollider",
+              "center": {
+                "x": -5,
+                "y": 0
+              },
+              "size": {
+                "width": 80,
+                "height": 90
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -684,8 +950,8 @@
         },
 
         {
-          "name" : "storage",
-          "components" : [
+          "name": "storage",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/storage.png",
@@ -693,17 +959,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": -170, "y": 422 }
+              "location": {
+                "x": -170,
+                "y": 422
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": 0 },
-              "size": { "width" : 250, "height" : 90 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "size": {
+                "width": 250,
+                "height": 90
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -715,8 +990,8 @@
         },
 
         {
-          "name" : "shelves",
-          "components" : [
+          "name": "shelves",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/shelves.png",
@@ -724,17 +999,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": -30, "y": 423 }
+              "location": {
+                "x": -30,
+                "y": 423
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": 0 },
-              "size": { "width" : 30, "height" : 90 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "size": {
+                "width": 30,
+                "height": 90
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -746,8 +1030,8 @@
         },
 
         {
-          "name" : "pantry",
-          "components" : [
+          "name": "pantry",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/pantry.png",
@@ -755,17 +1039,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 23, "y": 429 }
+              "location": {
+                "x": 23,
+                "y": 429
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": -10, "y": 0 },
-              "size": { "width" : 50, "height" : 100 }
+              "type": "BoxCollider",
+              "center": {
+                "x": -10,
+                "y": 0
+              },
+              "size": {
+                "width": 50,
+                "height": 100
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -777,8 +1070,8 @@
         },
 
         {
-          "name" : "kitchen",
-          "components" : [
+          "name": "kitchen",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/kitchen.png",
@@ -786,17 +1079,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 208, "y": 411 }
+              "location": {
+                "x": 208,
+                "y": 411
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": 0 },
-              "size": { "width" : 150, "height" : 150 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "size": {
+                "width": 150,
+                "height": 150
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -808,8 +1110,8 @@
         },
 
         {
-          "name" : "isle_top",
-          "components" : [
+          "name": "isle_top",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/isle_top.png",
@@ -817,17 +1119,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 385, "y": 380 }
+              "location": {
+                "x": 385,
+                "y": 380
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": 0 },
-              "size": { "width" : 150, "height" : 120 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "size": {
+                "width": 150,
+                "height": 120
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -839,8 +1150,8 @@
         },
 
         {
-          "name" : "isle_bottom",
-          "components" : [
+          "name": "isle_bottom",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/isle_bottom.png",
@@ -848,17 +1159,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 385, "y": 238 }
+              "location": {
+                "x": 385,
+                "y": 238
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 50, "y": 5 },
-              "size": { "width" : 100, "height" : 160 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 50,
+                "y": 5
+              },
+              "size": {
+                "width": 100,
+                "height": 160
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -870,8 +1190,8 @@
         },
 
         {
-          "name" : "bar_front",
-          "components" : [
+          "name": "bar_front",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/bar_front.png",
@@ -879,17 +1199,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 293, "y": 101 }
+              "location": {
+                "x": 293,
+                "y": 101
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": -20 },
-              "size": { "width" : 330, "height" : 40 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": -20
+              },
+              "size": {
+                "width": 330,
+                "height": 40
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -901,8 +1230,8 @@
         },
 
         {
-          "name" : "bar_side",
-          "components" : [
+          "name": "bar_side",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/bar_side.png",
@@ -910,19 +1239,28 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 293, "y": 187 }
+              "location": {
+                "x": 293,
+                "y": 187
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": -140, "y": -50 },
-              "size": { "width" : 50, "height" : 100 }
+              "type": "BoxCollider",
+              "center": {
+                "x": -140,
+                "y": -50
+              },
+              "size": {
+                "width": 50,
+                "height": 100
+              }
             }
           ]
         },
 
         {
-          "name" : "stool 1",
-          "components" : [
+          "name": "stool 1",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/stool.png",
@@ -930,17 +1268,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 199, "y": 55 }
+              "location": {
+                "x": 199,
+                "y": 55
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": -10, "y": 0 },
-              "size": { "width" : 40, "height" : 40 }
+              "type": "BoxCollider",
+              "center": {
+                "x": -10,
+                "y": 0
+              },
+              "size": {
+                "width": 40,
+                "height": 40
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -952,8 +1299,8 @@
         },
 
         {
-          "name" : "stool 2",
-          "components" : [
+          "name": "stool 2",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/stool.png",
@@ -961,17 +1308,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 262, "y": 46 }
+              "location": {
+                "x": 262,
+                "y": 46
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": -10, "y": 0 },
-              "size": { "width" : 40, "height" : 40 }
+              "type": "BoxCollider",
+              "center": {
+                "x": -10,
+                "y": 0
+              },
+              "size": {
+                "width": 40,
+                "height": 40
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -983,8 +1339,8 @@
         },
 
         {
-          "name" : "stool 3",
-          "components" : [
+          "name": "stool 3",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/stool.png",
@@ -992,17 +1348,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 321, "y": 55 }
+              "location": {
+                "x": 321,
+                "y": 55
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": -10, "y": 0 },
-              "size": { "width" : 40, "height" : 40 }
+              "type": "BoxCollider",
+              "center": {
+                "x": -10,
+                "y": 0
+              },
+              "size": {
+                "width": 40,
+                "height": 40
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -1014,8 +1379,8 @@
         },
 
         {
-          "name" : "lamp",
-          "components" : [
+          "name": "lamp",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/lamp.png",
@@ -1024,17 +1389,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 420, "y": -117 }
+              "location": {
+                "x": 420,
+                "y": -117
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": 20 },
-              "size": { "width" : 40, "height" : 40 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": 20
+              },
+              "size": {
+                "width": 40,
+                "height": 40
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -1048,8 +1422,8 @@
         },
 
         {
-          "name" : "couch",
-          "components" : [
+          "name": "couch",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/couch.png",
@@ -1057,17 +1431,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": 416, "y": -234 }
+              "location": {
+                "x": 416,
+                "y": -234
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": -20 },
-              "size": { "width" : 90, "height" : 170 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": -20
+              },
+              "size": {
+                "width": 90,
+                "height": 170
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -1079,8 +1462,8 @@
         },
 
         {
-          "name" : "pot",
-          "components" : [
+          "name": "pot",
+          "components": [
             {
               "type": "SpriteRenderer",
               "sprite": "interior/pot.png",
@@ -1089,17 +1472,26 @@
             },
             {
               "type": "Transform",
-              "location": { "x": -227, "y": -356 }
+              "location": {
+                "x": -227,
+                "y": -356
+              }
             },
             {
-              "type" : "BoxCollider",
-              "center" : { "x": 0, "y": 20 },
-              "size": { "width" : 40, "height" : 40 }
+              "type": "BoxCollider",
+              "center": {
+                "x": 0,
+                "y": 20
+              },
+              "size": {
+                "width": 40,
+                "height": 40
+              }
             }
           ],
-          "children" : [
+          "children": [
             {
-              "name" : "shadow",
+              "name": "shadow",
               "components": [
                 {
                   "type": "SpriteRenderer",
