@@ -54,7 +54,7 @@
                       },
                       "size": {
                         "width": 500,
-                        "height": 45
+                        "height": 40
                       }
                     }
                   ],
@@ -270,41 +270,6 @@
                         }
 
                       ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "lamp",
-              "components": [
-                {
-                  "type": "SpriteRenderer",
-                  "sprite": "Lamp.png",
-                  "layer": 1,
-                  "anchor": "BottomCenter",
-                  "color": [ 1.0, 1.0, 1.0, 1.0 ]
-
-                },
-                {
-                  "type": "Transform",
-                  "location": {
-                    "x": -100,
-                    "y": -156
-                  }
-                }
-              ],
-              "children": [
-                {
-                  "name": "lamp_light",
-                  "components": [
-                    {
-                      "type": "SpriteRenderer",
-                      "sprite": "Lamp_light.png",
-                      "layer": 1,
-                      "anchor": "BottomCenter",
-                      "color": [ 2.0, 2.0, 1.0, 1.0 ]
-
                     }
                   ]
                 }
@@ -775,7 +740,7 @@
             {
               "type": "SpriteRenderer",
               "sprite": "interior/background_lights.png",
-              "color": [ 1.0, 1.0, 1.0, 0.8 ],
+              "color": [ 1.0, 1.0, 1.0, 0.5 ],
               "layer": -1,
               "anchor": "Center"
             }
